@@ -1,0 +1,62 @@
+<!-- /templates/my-form.html-->
+
+<html>
+    <head>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"> 
+        <img src = "static/img/Sustainable Map Search@4x.png" alt = "Sustainable Map Search" style="width:472px;height:222px">
+    </head>
+    <body>
+        <form action="/form-handler" method="POST">
+            <div>
+	        Search for content by location here:
+            </div>
+            <div>
+		Enter a municipality in New Jersey to find articles, podcasts, and videos about that town.
+		<input type="text" name="query">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/form-handler2" method="POST">
+            <div>
+	        Search for content by author here:
+            </div>
+            <div>
+		Enter the name of an author to find content they've produced.
+		<input type="text" name="query2">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/form-handler3" method="POST">
+            <div>
+	        Search for content by title here
+            </div>
+            <div>
+		Enter a title to search the database for anything that matches that title.
+		<input type="text" name="query3">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+    <!-- minimal styling -->
+    <style>
+	head {
+	    background-color: #5b618a
+	}
+	body {
+	    background-color: #5b618a
+	    font-size: 18px;
+	    color: #b0fe76
+	    font-family: 'Manrope', sans-serif;
+	    
+	}
+        form {
+            margin: 1%;
+        }
+
+        div {
+            margin: 1% 0;
+        }
+    </style>
+</html>
+
